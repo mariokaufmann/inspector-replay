@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "InspectorAction",
+	"category" : "GT-InspectorReplayer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "CodeAction",
+	"type" : "normal"
+}

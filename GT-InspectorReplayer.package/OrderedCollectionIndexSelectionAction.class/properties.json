@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OrderedCollectionSelectionAction",
+	"category" : "GT-InspectorReplayer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"index"
+	],
+	"name" : "OrderedCollectionIndexSelectionAction",
+	"type" : "normal"
+}
