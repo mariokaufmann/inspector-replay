@@ -1,4 +1,4 @@
 as yet unclassified
 withKey: anObject
 
-^ self new key: anObject
+^ KeyAction new key: anObject 
