@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"block"
+		"code"
 	],
 	"name" : "CodeAction",
 	"type" : "normal"

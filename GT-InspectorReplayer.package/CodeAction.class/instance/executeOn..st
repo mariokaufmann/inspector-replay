@@ -1,4 +1,5 @@
 executing
 executeOn: anObject
 
-^ block value: anObject
+^ (anObject class compiler compile: 'tmp', String cr, code)
+	valueWithReceiver: anObject arguments: Array new
