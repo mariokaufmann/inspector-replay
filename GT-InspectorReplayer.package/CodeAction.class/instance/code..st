@@ -1,4 +1,3 @@
 accessing
 code: aString
-
-code := aString
+	code := aString

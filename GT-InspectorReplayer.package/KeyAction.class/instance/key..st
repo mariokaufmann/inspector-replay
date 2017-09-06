@@ -1,4 +1,3 @@
 accessing
 key: anObject
-
-key := anObject
+	key := anObject

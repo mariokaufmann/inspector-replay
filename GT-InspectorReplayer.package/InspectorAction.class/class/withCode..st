@@ -1,4 +1,3 @@
 as yet unclassified
 withCode: aString
-
-^ CodeAction new code: aString
+	^ CodeAction new code: aString

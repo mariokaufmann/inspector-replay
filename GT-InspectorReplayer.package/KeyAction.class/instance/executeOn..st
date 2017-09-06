@@ -1,4 +1,3 @@
 executing
 executeOn: aDictionary
-
-^ aDictionary at: key
+	^ aDictionary at: key

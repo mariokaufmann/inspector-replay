@@ -1,3 +1,3 @@
 executing
 executeOn: anOrderedCollection
-^ anOrderedCollection at: index
+	^ anOrderedCollection at: index

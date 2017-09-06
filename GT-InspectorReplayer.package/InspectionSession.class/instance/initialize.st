@@ -1,4 +1,4 @@
 adding
 initialize
-
-actions := OrderedCollection new
+	super initialize.
+	actions := OrderedCollection new

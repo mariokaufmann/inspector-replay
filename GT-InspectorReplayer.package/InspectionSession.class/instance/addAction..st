@@ -1,4 +1,3 @@
 adding
 addAction: anAction
-
-actions add: anAction 
+	actions add: anAction 

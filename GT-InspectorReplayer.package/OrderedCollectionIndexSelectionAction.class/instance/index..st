@@ -1,4 +1,3 @@
 accessing
 index: anInteger
-
-index := anInteger
+	index := anInteger
