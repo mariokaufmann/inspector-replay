@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "OrderedCollectionSelectionAction",
+	"super" : "InspectorAction",
 	"category" : "GT-InspectorReplayer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"index"
 	],
-	"name" : "OrderedCollectionIndexSelectionAction",
+	"name" : "IndexSelectionAction",
 	"type" : "normal"
 }
