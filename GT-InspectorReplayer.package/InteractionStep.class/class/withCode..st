@@ -1,3 +1,3 @@
 as yet unclassified
 withCode: aString
-	^ CodeAction new code: aString
+	^ CodeStep new code: aString

@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "InspectorAction",
+	"super" : "Object",
 	"category" : "GT-InspectorReplayer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"index"
-	],
-	"name" : "IndexSelectionAction",
+	"instvars" : [ ],
+	"name" : "InteractionStep",
 	"type" : "normal"
 }

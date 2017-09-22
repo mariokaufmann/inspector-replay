@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "InspectorAction",
+	"super" : "InteractionStep",
 	"category" : "GT-InspectorReplayer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"code"
+		"key"
 	],
-	"name" : "CodeAction",
+	"name" : "KeyStep",
 	"type" : "normal"
 }

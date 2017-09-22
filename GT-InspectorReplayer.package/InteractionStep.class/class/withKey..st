@@ -1,3 +1,3 @@
 as yet unclassified
 withKey: anObject
-	^ KeyAction new key: anObject 
+	^ KeyStep new key: anObject 

@@ -3,9 +3,9 @@ example2
 	| actions session list dict |
 	actions := 
  	{
-		InspectorAction withCode: '^ self asOrderedCollection'.
-		InspectorAction withIndex: 2.
-		InspectorAction withKey: 'testKey'
+		InteractionStep withCode: '^ self asOrderedCollection'.
+		InteractionStep withIndex: 2.
+		InteractionStep withKey: 'testKey'
 	}.
 	
 	session := InspectionSession new.

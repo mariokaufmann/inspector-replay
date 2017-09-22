@@ -3,8 +3,8 @@ example1
 	| actions session list dict |
 	actions := 
 	{
-		InspectorAction withIndex: 2.
-		InspectorAction withKey: 'testKey'
+		InteractionStep withIndex: 2.
+		InteractionStep withKey: 'testKey'
 	}.
 	session := InspectionSession new.
 	actions do: [ :action | session addAction: action ].
