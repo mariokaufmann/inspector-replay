@@ -1,4 +1,4 @@
 adding
 initialize
 	super initialize.
-	actions := OrderedCollection new
+	rootStep := EmptyStep new
