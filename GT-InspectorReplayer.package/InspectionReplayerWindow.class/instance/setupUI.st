@@ -5,10 +5,12 @@ setupUI
 	self extent: 420@420.
 	
 	mainPane := BrFlowPane new.
-	mainPane layout: BlFlowLayout vertical.
+	mainPane layout: BlFlowLayout vertical;
+				constraintsDo: [ :c |
+						c vertical fitContent.
+						c horizontal matchParent  ].
 	
 	buttonsPane := BrFlowPane new.
-	
 	buttonsPane layoutDo: [ :l | l alignTopLeft ];
 				constraintsDo: [ :c |
 						c vertical fitContent.
@@ -19,4 +21,5 @@ setupUI
 	
 	mainPane addChild: buttonsPane.
 	
-	self root addChild: buttonsPane.
+	
+	self root addChild: mainPane.
