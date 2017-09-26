@@ -1,21 +1,22 @@
 initialization
 setupUI
-	| buttonsPane button |
+	| mainPane contentPane buttonsPane|
 	BrMdTheme load.
 	self extent: 420@420.
 	
+	mainPane := BrFlowPane new.
+	mainPane layout: BlFlowLayout vertical.
+	
 	buttonsPane := BrFlowPane new.
 	
-	buttonsPane layoutDo: [ :l | l alignCenter ];
+	buttonsPane layoutDo: [ :l | l alignTopLeft ];
 				constraintsDo: [ :c |
-						c vertical matchParent.
+						c vertical fitContent.
 						c horizontal matchParent ].
+
+	buttonsPane addChild: (self createButtonWithText: 'Raw').
+	buttonsPane addChild: (self createButtonWithText: 'Items').
 	
-	button := BrButton new
-		text: (BrRopedText string: 'TestButton');
-		margin: (BlInsets all: 5);
-		size: 400@20.
-	buttonsPane addChild: button;
-	addChild: (BrButton new text: (BrRopedText string: 'TestButton 2')).
+	mainPane addChild: buttonsPane.
 	
 	self root addChild: buttonsPane.
