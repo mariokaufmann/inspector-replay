@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlSpace",
+	"category" : "GT-InspectorReplayer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "InspectionReplayerWindow",
+	"type" : "normal"
+}
