@@ -1,25 +1,18 @@
 initialization
 setupUI
-	| mainPane contentPane buttonsPane|
+	| mainPane |
 	BrMdTheme load.
-	self extent: 420@420.
+	self extent: 900@420.
+	self title: 'Inspector Replayer'.
 	
 	mainPane := BrFlowPane new.
-	mainPane layout: BlFlowLayout vertical;
+	mainPane margin: (BlInsets all: 10).
+	mainPane layout: BlFlowLayout horizontal;
 				constraintsDo: [ :c |
-						c vertical fitContent.
+						c vertical matchParent.
 						c horizontal matchParent  ].
-	
-	buttonsPane := BrFlowPane new.
-	buttonsPane layoutDo: [ :l | l alignTopLeft ];
-				constraintsDo: [ :c |
-						c vertical fitContent.
-						c horizontal matchParent ].
-
-	buttonsPane addChild: (self createButtonWithText: 'Raw').
-	buttonsPane addChild: (self createButtonWithText: 'Items').
-	
-	mainPane addChild: buttonsPane.
-	
+					
+	mainPane addChild: InspectionReplayerPane new.
+	mainPane addChild: InspectionReplayerPane new.
 	
 	self root addChild: mainPane.
