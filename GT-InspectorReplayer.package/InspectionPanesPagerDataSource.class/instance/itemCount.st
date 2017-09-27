@@ -1,0 +1,3 @@
+adding
+itemCount
+	^ panes size

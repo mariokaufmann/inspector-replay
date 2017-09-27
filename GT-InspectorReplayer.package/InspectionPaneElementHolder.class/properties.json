@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BlSpace",
+	"super" : "BlInfiniteElementHolder",
 	"category" : "GT-InspectorReplayer-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "InspectionReplayerWindow",
+	"name" : "InspectionPaneElementHolder",
 	"type" : "normal"
 }
