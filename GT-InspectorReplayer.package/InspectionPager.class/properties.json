@@ -1,13 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "BlInfiniteDataSource",
+	"super" : "BlElement",
 	"category" : "GT-InspectorReplayer-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"panes"
+		"panesElement",
+		"buttonLeft",
+		"buttonRight"
 	],
-	"name" : "InspectionPanesPagerDataSource",
+	"name" : "InspectionPager",
 	"type" : "normal"
 }

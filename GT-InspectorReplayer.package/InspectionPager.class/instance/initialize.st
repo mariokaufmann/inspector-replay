@@ -4,7 +4,7 @@ initialize
 	
 	self layout: BlLinearLayout horizontal.
 	
-	panesElement := BlInfiniteExamplePagerElement new.
+	panesElement := InspectionPagerElement new.
 	
 	panesElement constraintsDo: [ :c |
 		c horizontal matchParent.
