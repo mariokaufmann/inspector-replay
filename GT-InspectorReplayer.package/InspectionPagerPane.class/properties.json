@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "GT-InspectorReplayer-UI",
+	"category" : "GT-InspectorReplayer-UI - PagerPane",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
