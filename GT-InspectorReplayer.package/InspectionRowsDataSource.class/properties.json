@@ -8,6 +8,6 @@
 	"instvars" : [
 		"rows"
 	],
-	"name" : "InspectionRowDataSource",
+	"name" : "InspectionRowsDataSource",
 	"type" : "normal"
 }
