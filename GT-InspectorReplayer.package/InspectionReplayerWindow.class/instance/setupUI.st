@@ -1,7 +1,7 @@
 initialization
 setupUI
 	| mainPane pager |
-	self extent: 900@420.
+	self extent: 1000@600.
 	self title: 'Inspector Replayer'.
 	
 	mainPane := BlElement new.

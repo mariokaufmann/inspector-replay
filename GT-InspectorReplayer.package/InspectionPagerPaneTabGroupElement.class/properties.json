@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "GT-InspectorReplayer-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelsElement",
+		"contentElement"
+	],
+	"name" : "InspectionPagerPaneTabGroupElement",
+	"type" : "normal"
+}
