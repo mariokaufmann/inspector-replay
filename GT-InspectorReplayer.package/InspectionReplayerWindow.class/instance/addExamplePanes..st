@@ -1,6 +1,6 @@
 adding
 addExamplePanes: aPagerPane
-| tabs styler editorText editor editorElement tab2 tab3 tab1 |
+| tabs styler editorText editor editorElement tab2 tab3 tab1 row1 row2 |
 
 	tabs := InspectionPagerPaneTabGroupElement new.
 	tabs constraintsDo: [ :c |
@@ -32,15 +32,25 @@ addExamplePanes: aPagerPane
 		margin: (BlInsets all: 20);
 		background: Color blue.
 
-	tab3 := BlElement new
-		size: 400@400;
-		margin: (BlInsets all: 20);
-		background: Color green.
+	tab3 := InspectionTableElement new
+		margin: (BlInsets all: 20).
+		
+	row1 := InspectionRowElement new.
+	row1 put: 'width' atColumn: 'Property'.
+	row1 put: 300 atColumn: 'Value'.
+	
+	row2 := InspectionRowElement new.
+	row2 put: 'height' atColumn: 'Property'.
+	row2 put: 600 atColumn: 'Value'.
+		
+	tab3 rowsElement dataSource 
+		addRow: row1;
+		addRow: row2.
 		
 	"tabs addTab: editorElement titled: 'Editor'."
 	tabs addTab: tab1 titled: 'Tab 1'.
 	tabs addTab: tab2 titled: 'Tab 2'.
-	tabs addTab: tab3 titled: 'Tab 3'.
+	tabs addTab: tab3 titled: 'List'.
 
 	aPagerPane panesElement dataSource
 		addPane: (InspectionPagerPane new title: 'Pane 1'; elementBlock: [tabs]).
