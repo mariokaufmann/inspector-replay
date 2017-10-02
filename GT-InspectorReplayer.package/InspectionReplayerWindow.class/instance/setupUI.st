@@ -1,6 +1,6 @@
 initialization
 setupUI
-	| mainPane |
+	| mainPane pager |
 	self extent: 900@420.
 	self title: 'Inspector Replayer'.
 	
@@ -11,7 +11,13 @@ setupUI
 				constraintsDo: [ :c |
 						c vertical matchParent.
 						c horizontal matchParent  ].
-					
-	mainPane addChild: InspectionPager new.		
+	
+	pager := InspectionPager new.
+	self addExamplePanes: pager.
+	pager constraintsDo: [ :c |
+		c horizontal matchParent.
+		c vertical matchParent ].
+	
+	mainPane addChild: pager.		
 
 	self root addChild: mainPane.

@@ -2,6 +2,8 @@ initialization
 pane: aPagerPane
 	| titleElement titleText |
 
+	itemElement removeChildren.
+
 	titleText := BrRopedText string: aPagerPane title.
 	titleText attributes: {
 		BrFontSizeAttribute size: 30
