@@ -1,5 +1,5 @@
 adding
-addExamplePanes: aPagerPane
+addExamplePanes
 | tabs styler editorText editor editorElement tab2 tab3 tab1 row1 row2 |
 
 	tabs := InspectionPagerPaneTabGroupElement new.
@@ -55,5 +55,5 @@ addExamplePanes: aPagerPane
 	tabs addTab: tab2 titled: 'Tab 2'.
 	tabs addTab: tab3 titled: 'List'.
 
-	aPagerPane panesElement dataSource
+	self pager panesElement dataSource
 		addPane: (InspectionPagerPane new title: 'Pane 1'; elementBlock: [tabs]).
