@@ -3,7 +3,6 @@ initialize
 	super initialize.
 	
 	self width: 100.
-	self background: Color green.
 	self layout: BlLinearLayout vertical.
 	
 	labelsElement := BlElement new

@@ -3,7 +3,6 @@ pane: aPagerPane
 	| titleElement titleText |
 
 	itemElement removeChildren.
-	itemElement background: Color yellow.
 	itemElement width: 400.
 
 	titleText := BrRopedText string: aPagerPane title.
