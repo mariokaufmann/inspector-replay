@@ -6,9 +6,6 @@ pane: aPagerPane
 	itemElement width: 400.
 
 	titleText := BrRopedText string: aPagerPane title.
-	titleText attributes: {
-		BrFontSizeAttribute size: 30
-	}.
 	titleElement := BlTextElement new.
 	titleElement text: titleText.
 	titleElement padding: (BlInsets all: 10).

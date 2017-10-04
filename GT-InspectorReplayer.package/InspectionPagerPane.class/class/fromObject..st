@@ -16,7 +16,7 @@ fromObject: anObject
 		row := InspectionRowElement new.
 		row put: instVar atColumn: 'Property'.
 		row put: (anObject instVarNamed: instVar) atColumn: 'Value'.
-		tab1 addRow: row.
+		tab1 rowsElement dataSource addRow: row.
 		 ].
 	
 	tabs addTab: tab1 titled: 'Raw'.
