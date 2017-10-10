@@ -1,13 +1,12 @@
 instance creation
-fromInteractionStep: anInteractionStep
+fromInspectionObject: anObject
 	| instance |
 	instance := self new.
 	instance constraintsDo: [ :c |
 		c horizontal matchParent.
 		c vertical matchParent ].
 	
-	(anInteractionStep inspectionObject 
-		gt2InspectorPresentationsIn: instance) do: [ :presentation |
+	(anObject gt2InspectorPresentationsIn: instance) do: [ :presentation |
 			instance addTab: presentation titled: presentation title ].
 		
 	^ instance

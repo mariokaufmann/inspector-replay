@@ -1,6 +1,6 @@
 instance creation
 createFromObject: anObject
 	| tabs |
-	tabs := InspectionPagerPaneTabGroupElement fromInteractionStep: (InteractionStep new inspectionObject: anObject).
+	tabs := InspectionPagerPaneTabGroupElement fromInspectionObject: anObject.
 	^ self new title: anObject asString; elementBlock: [tabs]
 	

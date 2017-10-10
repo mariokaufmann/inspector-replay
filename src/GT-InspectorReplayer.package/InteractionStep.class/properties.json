@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"children",
-		"inspectionObject"
+		"children"
 	],
 	"name" : "InteractionStep",
 	"type" : "normal"

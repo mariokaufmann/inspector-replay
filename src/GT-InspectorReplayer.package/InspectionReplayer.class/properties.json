@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "GT-InspectorReplayer",
+	"category" : "GT-InspectorReplayer-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"session",
+		"window"
+	],
 	"name" : "InspectionReplayer",
 	"type" : "normal"
 }
