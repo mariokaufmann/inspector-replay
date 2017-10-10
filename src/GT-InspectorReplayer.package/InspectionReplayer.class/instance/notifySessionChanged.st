@@ -4,4 +4,8 @@ notifySessionChanged
 	panesDataSource := window panesDataSource.
 	panesDataSource clearPanes.
 	
-	panesDataSource addPane: (InspectionPagerPane createFromObject: session inspectionObject)
+	panesDataSource addPane: (InspectionPagerPane createFromObject: session inspectionObject).
+	
+	self addPanesForSessionSteps.
+	
+	
