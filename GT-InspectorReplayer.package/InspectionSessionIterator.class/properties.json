@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GT-InspectorReplayer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootStep"
+	],
+	"name" : "InspectionSessionIterator",
+	"type" : "normal"
+}
