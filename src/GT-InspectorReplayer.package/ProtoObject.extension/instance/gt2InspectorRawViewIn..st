@@ -3,8 +3,7 @@ gt2InspectorRawViewIn: aTabGroup
 	<gt2InspectorPresentationOrder: 10>
 	| table rowDict |
 	table := aTabGroup table
-		title: 'Raw'.
-		
+		title: 'Raw'..
 	self gtInspectorVariableValuePairs do: [ :assoc |
 		rowDict := Dictionary new.
 		rowDict at: 'Property' put: assoc key.

@@ -6,8 +6,8 @@ fromInteractionStep: anInteractionStep
 		c horizontal matchParent.
 		c vertical matchParent ].
 	
-	anInteractionStep inspectionObject 
-		gt2InspectorPresentations do: [ :presentation |
+	(anInteractionStep inspectionObject 
+		gt2InspectorPresentationsIn: instance) do: [ :presentation |
 			instance addTab: presentation titled: presentation title ].
 		
 	^ instance
