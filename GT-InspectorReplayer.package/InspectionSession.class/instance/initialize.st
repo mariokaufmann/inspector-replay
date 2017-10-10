@@ -1,4 +1,4 @@
 adding
 initialize
 	super initialize.
-	rootStep := EmptyStep new
+	rootStep := InteractionStep new
