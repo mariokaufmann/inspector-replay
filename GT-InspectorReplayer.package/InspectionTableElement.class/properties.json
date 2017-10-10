@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "GT-InspectorReplayer-UI - TableElement",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rowsElement"
+	],
+	"name" : "InspectionTableElement",
+	"type" : "normal"
+}
