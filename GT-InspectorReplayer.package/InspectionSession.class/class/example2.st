@@ -1,16 +1,13 @@
 examples
 example2
-	| actions session list dict |
-	actions := 
- 	{
-		InteractionStep withCode: '^ self asOrderedCollection'.
-		InteractionStep withIndex: 2.
-		InteractionStep withKey: 'testKey'
-	}.
+	| session list dict rootStep keyStep |
+	rootStep := InteractionStep withIndex: 2.
+	keyStep := InteractionStep withKey: 'testKey'.
+	rootStep addChildStep: keyStep.
+	keyStep addChildStep: (InteractionStep withCode: '^ self asOrderedCollection').
 	
 	session := InspectionSession new.
-
-	actions do: [ :action | session addAction: action ].
+	session rootStep: rootStep.
 
 	dict := Dictionary new.
 	dict at: 'testKey' put: 42.
