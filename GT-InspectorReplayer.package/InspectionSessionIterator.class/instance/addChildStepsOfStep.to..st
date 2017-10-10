@@ -6,5 +6,5 @@ anInteractionStep childSteps isEmpty
 	ifFalse: [ 
 		latestStep := anInteractionStep lastChildStep.
 		anOrderedCollection add: latestStep.
-		self addChildStepsOfStep: latestStep toCollection: anOrderedCollection 
+		self addChildStepsOfStep: latestStep to: anOrderedCollection 
 		 ]
