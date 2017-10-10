@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rowsElement"
+		"rowsElement",
+		"title"
 	],
 	"name" : "InspectionTableElement",
 	"type" : "normal"
