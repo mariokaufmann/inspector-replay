@@ -1,9 +1,14 @@
 as yet unclassified
 rowElement: aRowElement
 	
+	| element |
 	itemElement removeChildren.
 	itemElement layout: (BlGridLayout new columnCount: aRowElement numberOfColumns).
 	
 	aRowElement columnValues valuesDo: [ :value |
-		itemElement addChild: (self elementForText: (value printString)).
+		element := self elementForText: (value printString).
+		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
+			InspectionPagerPane fromObject: aRowElement rowObject toDataSource: aRowElement panesDataSource.
+			 ].
+		itemElement addChild: element.
 		 ]

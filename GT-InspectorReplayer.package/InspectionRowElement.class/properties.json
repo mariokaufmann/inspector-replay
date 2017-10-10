@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"columnValues"
+		"columnValues",
+		"rowObject",
+		"panesDataSource"
 	],
 	"name" : "InspectionRowElement",
 	"type" : "normal"
