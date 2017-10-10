@@ -8,7 +8,7 @@ rowElement: aRowElement
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
-			InspectionPagerPane fromObject: aRowElement rowObject toDataSource: aRowElement panesDataSource.
+			InspectionPagerPane createFromObject: aRowElement rowObject addToDataSource: aRowElement panesDataSource.
 			 ].
 		itemElement addChild: element.
 		 ]

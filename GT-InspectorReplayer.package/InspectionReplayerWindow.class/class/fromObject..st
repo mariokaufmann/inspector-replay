@@ -2,6 +2,6 @@ instance creation
 fromObject: anObject
 	| window |
 	window := self new.
-	InspectionPagerPane fromObject: anObject toDataSource: window pager panesElement dataSource.
+	InspectionPagerPane createFromObject: anObject addToDataSource: window pager panesElement dataSource.
 	window show
 	

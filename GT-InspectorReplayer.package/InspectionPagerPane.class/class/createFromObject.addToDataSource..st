@@ -1,5 +1,5 @@
 instance creation
-fromObject: anObject toDataSource: anInspectionPagerPaneDataSource
+createFromObject: anObject addToDataSource: anInspectionPagerPaneDataSource
 	| tabs tab1 row pane |
 	tabs := InspectionPagerPaneTabGroupElement new.
 	tabs constraintsDo: [ :c |
