@@ -8,7 +8,8 @@
 	"instvars" : [
 		"columnValues",
 		"rowObject",
-		"panesDataSource"
+		"panesDataSource",
+		"parentStep"
 	],
 	"name" : "InspectionRowElement",
 	"type" : "normal"

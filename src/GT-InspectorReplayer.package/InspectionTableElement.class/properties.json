@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"rowsElement",
-		"title"
+		"title",
+		"parentStep"
 	],
 	"name" : "InspectionTableElement",
 	"type" : "normal"
