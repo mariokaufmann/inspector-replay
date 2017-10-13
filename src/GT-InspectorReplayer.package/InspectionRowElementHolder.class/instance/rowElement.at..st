@@ -1,5 +1,5 @@
 as yet unclassified
-rowElement: aRowElement
+rowElement: aRowElement at: aPosition
 	
 	| element |
 	itemElement removeChildren.
@@ -9,7 +9,7 @@ rowElement: aRowElement
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			" add new event handler here "
-			aRowElement parentStep addChild: (InteractionStep withIndex: 2 "get own index").
+			aRowElement parentStep addChild: (InteractionStep withIndex: aPosition).
 			InspectionPagerPane createFromObject: aRowElement rowObject addToDataSource: aRowElement panesDataSource.
 			 ].
 		itemElement addChild: element.
