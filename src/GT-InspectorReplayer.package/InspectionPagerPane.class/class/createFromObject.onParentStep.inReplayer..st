@@ -1,9 +1,9 @@
 instance creation
 createFromObject: anObject onParentStep: anInteractionStep inReplayer: anInspectionReplayer
 	| tabs |
-	tabs := (InspectionPagerPaneTabGroupElement 
+	tabs := InspectionPagerPaneTabGroupElement 
 	onObject: anObject 
-	onParentStep: anInteractionStep) 
-		replayer: anInspectionReplayer.
+	onParentStep: anInteractionStep
+	inReplayer: anInspectionReplayer. 
 	^ self new title: anObject asString; elementBlock: [tabs]
 	

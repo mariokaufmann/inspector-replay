@@ -1,8 +1,9 @@
 instance creation
-onObject: anObject onParentStep: anInteractionStep
+onObject: anObject onParentStep: anInteractionStep inReplayer: anInspectionReplayer
 	| instance |
 	instance := self new.
 	instance parentStep: anInteractionStep.
+	instance replayer: anInspectionReplayer.
 	instance constraintsDo: [ :c |
 		c horizontal matchParent.
 		c vertical matchParent ].

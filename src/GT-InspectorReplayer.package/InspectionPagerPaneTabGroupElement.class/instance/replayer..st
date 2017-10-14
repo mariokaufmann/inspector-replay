@@ -1,3 +1,3 @@
 accessing
-replayer: anObject
-	replayer := anObject
+replayer: anInspectionReplayer
+	replayer := anInspectionReplayer
