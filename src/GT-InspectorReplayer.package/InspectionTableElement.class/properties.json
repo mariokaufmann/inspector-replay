@@ -8,7 +8,8 @@
 	"instvars" : [
 		"rowsElement",
 		"title",
-		"parentStep"
+		"parentStep",
+		"replayer"
 	],
 	"name" : "InspectionTableElement",
 	"type" : "normal"

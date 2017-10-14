@@ -8,9 +8,8 @@ rowElement: aRowElement at: aPosition
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
-			" add new event handler here "
-			aRowElement parentStep addChild: (InteractionStep withIndex: aPosition).
-			InspectionPagerPane createFromObject: aRowElement rowObject addToDataSource: aRowElement panesDataSource.
+			aRowElement parentStep addChildStep: (InteractionStep withIndex: aPosition).
+			aRowElement replayer notifySessionChanged.
 			 ].
 		itemElement addChild: element.
 		 ]

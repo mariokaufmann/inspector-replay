@@ -9,7 +9,8 @@
 		"columnValues",
 		"rowObject",
 		"panesDataSource",
-		"parentStep"
+		"parentStep",
+		"replayer"
 	],
 	"name" : "InspectionRowElement",
 	"type" : "normal"
