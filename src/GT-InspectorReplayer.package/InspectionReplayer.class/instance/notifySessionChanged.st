@@ -7,7 +7,7 @@ notifySessionChanged
 	panesDataSource addPane: 
 		(InspectionPagerPane 
 		createFromObject: session inspectionObject
-		onParentStep: InteractionStep new
+		onParentStep: session rootStep
 		 inReplayer: self).
 	
 	self addPanesForSessionSteps.
