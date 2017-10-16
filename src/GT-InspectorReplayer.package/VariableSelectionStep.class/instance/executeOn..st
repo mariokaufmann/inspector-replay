@@ -1,3 +1,3 @@
 executing
 executeOn: anObject
-^ anObject instVarName: self instVarName
+^ anObject instVarNamed: self instVarName

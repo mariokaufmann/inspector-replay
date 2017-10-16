@@ -10,7 +10,8 @@
 		"rowObject",
 		"panesDataSource",
 		"parentStep",
-		"replayer"
+		"replayer",
+		"rowSelectAction"
 	],
 	"name" : "InspectionRowElement",
 	"type" : "normal"

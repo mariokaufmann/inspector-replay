@@ -1,5 +1,5 @@
 as yet unclassified
-rowElement: aRowElement at: aPosition
+rowElement: aRowElement
 	
 	| element |
 	itemElement removeChildren.
@@ -8,7 +8,7 @@ rowElement: aRowElement at: aPosition
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
-			aRowElement parentStep addChildStep: (InteractionStep withIndex: aPosition).
+			aRowElement parentStep addChildStep: aRowElement rowSelectAction.
 			aRowElement replayer notifySessionChanged.
 			 ].
 		itemElement addChild: element.

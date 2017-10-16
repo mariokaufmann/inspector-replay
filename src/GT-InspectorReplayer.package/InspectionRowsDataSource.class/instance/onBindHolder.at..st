@@ -1,3 +1,3 @@
 accessing
 onBindHolder: anElementHolder at: aPosition
-	anElementHolder rowElement: (rows at: aPosition) at: aPosition
+	anElementHolder rowElement: (rows at: aPosition)
