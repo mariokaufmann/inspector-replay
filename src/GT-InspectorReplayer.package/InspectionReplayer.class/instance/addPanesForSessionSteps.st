@@ -5,7 +5,6 @@ addPanesForSessionSteps
 	intermediateResult := session inspectionObject.
 		session iterator steps do: [ :step |
 			intermediateResult := step executeOn: intermediateResult.
-			self halt.
 			self window panesDataSource addPane: 
 			(InspectionPagerPane 
 			createFromObject: intermediateResult 
