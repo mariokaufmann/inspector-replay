@@ -5,9 +5,12 @@ gt2InspectorSubmorphsViewIn: aTabGroup
 	table := aTabGroup table
 		title: 'Submorphs' ..
 				
-	self submorphsDo: [ :submorph |
+	self submorphs doWithIndex: [ :submorph :index |
 		rowDict := Dictionary new.
 		rowDict at: 'Name' put: submorph printString.
-		table addRowWithAssociations: rowDict associations].
+		table 
+			addRowWithAssociations: rowDict associations
+			rowSelectAction: (ChildCollectionIndexSelectionStep 
+				withChildBlock: [ :morph | morph submorphs ] index:  index)].
 	
 	^ table

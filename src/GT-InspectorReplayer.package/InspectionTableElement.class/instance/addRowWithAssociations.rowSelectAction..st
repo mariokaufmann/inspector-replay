@@ -1,5 +1,5 @@
 adding
-addRowWithAssociations: associations
+addRowWithAssociations: associations rowSelectAction: anInteractionStep
 	| row |
 	row := InspectionRowElement new.
 	row replayer: self replayer.
