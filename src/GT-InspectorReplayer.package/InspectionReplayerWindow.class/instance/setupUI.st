@@ -5,12 +5,14 @@ setupUI
 	self title: 'Inspector Replayer'.
 	
 	mainPane := BlElement new.
-
+	
 	mainPane margin: (BlInsets all: 10).
-	mainPane layout: BlFlowLayout horizontal;
+	mainPane layout: BlLinearLayout vertical;
 				constraintsDo: [ :c |
 						c vertical matchParent.
 						c horizontal matchParent  ].
+					
+	mainPane addChild: self createButtonsPane.
 	
 	pager := InspectionPager new.
 	pager constraintsDo: [ :c |

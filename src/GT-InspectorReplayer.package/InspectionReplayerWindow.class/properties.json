@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pager"
+		"pager",
+		"inspectionSession"
 	],
 	"name" : "InspectionReplayerWindow",
 	"type" : "normal"
