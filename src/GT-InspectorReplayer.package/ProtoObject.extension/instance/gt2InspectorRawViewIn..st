@@ -1,8 +1,8 @@
 *GT-InspectorReplayer
-gt2InspectorRawViewIn: aTabGroup
+gt2InspectorRawViewIn: composite
 	<gt2InspectorPresentationOrder: 10>
 	| table rowDict |
-	table := aTabGroup table
+	table := composite table
 		title: 'Raw'.
 	self gtInspectorVariableValuePairs do: [ :assoc |
 		rowDict := Dictionary new.

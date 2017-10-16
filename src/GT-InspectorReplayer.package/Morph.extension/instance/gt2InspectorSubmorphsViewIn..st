@@ -1,8 +1,8 @@
 *GT-InspectorReplayer
-gt2InspectorSubmorphsViewIn: aTabGroup
+gt2InspectorSubmorphsViewIn: composite
 	<gt2InspectorPresentationOrder: 15>
 	| table rowDict |
-	table := aTabGroup table
+	table := composite table
 		title: 'Submorphs' ..
 				
 	self submorphs doWithIndex: [ :submorph :index |
