@@ -1,4 +1,4 @@
-as yet unclassified
+examples
 sessionWithThreeSteps
 	<gtExample>
 	| session list codeStep indexStep keyStep dict rawList |

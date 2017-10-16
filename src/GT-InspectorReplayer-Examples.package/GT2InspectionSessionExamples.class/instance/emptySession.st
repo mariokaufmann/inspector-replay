@@ -1,4 +1,4 @@
-as yet unclassified
+examples
 emptySession
 	<gtExample>
 	| session |
