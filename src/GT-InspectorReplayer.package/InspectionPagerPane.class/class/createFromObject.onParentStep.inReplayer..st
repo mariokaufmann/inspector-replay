@@ -5,5 +5,5 @@ createFromObject: anObject onParentStep: anInteractionStep inReplayer: anInspect
 	onObject: anObject 
 	onParentStep: anInteractionStep
 	inReplayer: anInspectionReplayer. 
-	^ self new title: anObject asString; elementBlock: [tabs]
+	^ self new title: anObject gtDisplayString; elementBlock: [tabs]
 	
