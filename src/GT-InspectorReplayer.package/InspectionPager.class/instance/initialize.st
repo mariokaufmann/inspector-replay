@@ -12,12 +12,14 @@ initialize
 
 	buttonLeft := BlTextElement new
 		padding: (BlInsets all: 10);
+		margin: (BlInsets right: 20);
 		background: Color veryLightGray;
 		text: (BrRopedText string: '< Left');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			panesElement smoothScrollBy: panesElement width negated @ 0 ].
 	buttonRight := BlTextElement new
 		padding: (BlInsets all: 10);
+		margin: (BlInsets left: 20);
 		background: Color veryLightGray;
 		text: (BrRopedText string: 'Right >');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
