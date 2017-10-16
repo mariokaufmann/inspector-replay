@@ -1,3 +1,3 @@
 as yet unclassified
 withKey: anObject
-	^ KeyStep new key: anObject 
+	^ self new key: anObject 
