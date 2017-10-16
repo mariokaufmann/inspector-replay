@@ -6,7 +6,7 @@ gt2InspectorRawViewIn: aTabGroup
 		title: 'Raw'.
 	self gtInspectorVariableValuePairs do: [ :assoc |
 		rowDict := Dictionary new.
-		rowDict at: 'Property' put: assoc key.
+		rowDict at: 'Property' put: assoc key asString.
 		rowDict at: 'Value' put: assoc value.
 		table 
 			addRowWithAssociations: rowDict associations
