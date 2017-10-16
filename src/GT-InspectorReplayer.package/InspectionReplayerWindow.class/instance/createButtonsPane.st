@@ -25,7 +25,7 @@ createButtonsPane
 		background: Color veryLightGray;
 		text: (BrRopedText string: 'Inspect session in InspectionReplayer');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
-			InspectionReplayer onObject: self inspectionSession
+			InspectionReplayer openOnObject: self inspectionSession
 			].
 	buttonsPane addChild: button2.
 		

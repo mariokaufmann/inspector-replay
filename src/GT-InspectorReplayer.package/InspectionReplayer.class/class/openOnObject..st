@@ -1,3 +1,3 @@
 as yet unclassified
-onObject: anObject
+openOnObject: anObject
 	^ self new session: (InspectionSession onObject: anObject)
