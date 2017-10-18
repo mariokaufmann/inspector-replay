@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "InspectionAction",
+	"instvars" : [
+		"inspectionObject",
+		"transformationAction",
+		"childActions",
+		"childSteps"
+	],
+	"name" : "InspectionStep",
 	"type" : "normal"
 }
