@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "InteractionStep",
+	"super" : "InspectionAction",
 	"category" : "GT-InspectorReplayer-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"childBlock",
 		"index"
 	],
-	"name" : "ChildCollectionIndexSelectionStep",
+	"name" : "IndexSelectionAction",
 	"type" : "normal"
 }

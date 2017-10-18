@@ -10,7 +10,7 @@ gt2InspectorSubmorphsViewIn: composite
 		rowDict at: 'Name' put: submorph printString.
 		table 
 			addRowWithAssociations: rowDict associations
-			rowSelectAction: (ChildCollectionIndexSelectionStep 
+			rowSelectAction: (ChildCollectionIndexSelectionAction 
 				withChildBlock: [ :morph | morph submorphs ] index:  index)].
 	
 	^ table

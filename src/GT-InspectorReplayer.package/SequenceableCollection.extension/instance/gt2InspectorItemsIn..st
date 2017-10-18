@@ -10,6 +10,6 @@ gt2InspectorItemsIn: composite
 		rowDict at: 'Item' put: item.
 		table
 			addRowWithAssociations: rowDict associations
-			rowSelectAction: (IndexSelectionStep withIndex: index) ].
+			rowSelectAction: (IndexSelectionAction withIndex: index) ].
 	^ table
 	

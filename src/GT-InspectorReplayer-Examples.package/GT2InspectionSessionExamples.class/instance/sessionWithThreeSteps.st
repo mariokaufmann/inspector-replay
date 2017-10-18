@@ -5,10 +5,10 @@ sessionWithThreeSteps
 	
 	session := self emptySession.
 	
-	codeStep := CodeStep withCode: '^ self asOrderedCollection'.
-	indexStep := IndexSelectionStep withIndex: 2.
+	codeStep := CodeAction withCode: '^ self asOrderedCollection'.
+	indexStep := IndexSelectionAction withIndex: 2.
 	codeStep addChildStep: indexStep.
-	keyStep := KeyStep withKey: 'testKey'.
+	keyStep := KeyAction withKey: 'testKey'.
 	indexStep addChildStep: keyStep.
 	
 	session rootStep addChildStep: codeStep.

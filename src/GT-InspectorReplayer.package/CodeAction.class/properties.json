@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "InteractionStep",
+	"super" : "InspectionAction",
 	"category" : "GT-InspectorReplayer-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"code"
 	],
-	"name" : "CodeStep",
+	"name" : "CodeAction",
 	"type" : "normal"
 }

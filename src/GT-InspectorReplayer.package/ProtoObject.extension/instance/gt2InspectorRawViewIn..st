@@ -10,6 +10,6 @@ gt2InspectorRawViewIn: composite
 		rowDict at: 'Value' put: assoc value.
 		table 
 			addRowWithAssociations: rowDict associations
-			rowSelectAction: (VariableSelectionStep withName: assoc key).].
+			rowSelectAction: (VariableSelectionAction withName: assoc key).].
 	
 	^ table
