@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "GT-InspectorReplayer-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parentStep",
+		"replayer"
+	],
+	"name" : "InspectionTabElement",
+	"type" : "normal"
+}
