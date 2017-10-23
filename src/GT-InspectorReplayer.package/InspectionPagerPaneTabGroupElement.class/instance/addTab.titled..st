@@ -9,7 +9,7 @@ addTab: anElement titled: aString
 	tabLabel
 		addEventHandlerOn: BlClickEvent
 		do: [ :anEvent |
-				self selectTabAt: (labelsElement indexOf: anEvent currentTarget)
+				self selectTabAt: (labelsElement children indexOf: anEvent currentTarget)
 			].
 	
 	contentElement hasChildren
