@@ -11,7 +11,9 @@
 		"panesDataSource",
 		"parentStep",
 		"replayer",
-		"rowSelectAction"
+		"rowSelectAction",
+		"announcer",
+		"selected"
 	],
 	"name" : "InspectionRowElement",
 	"type" : "normal"

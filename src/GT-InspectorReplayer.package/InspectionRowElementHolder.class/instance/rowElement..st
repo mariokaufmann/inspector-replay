@@ -1,9 +1,13 @@
-as yet unclassified
+accessing
 rowElement: aRowElement
 	
 	| element |
+	rowElement := aRowElement.
+	
 	itemElement removeChildren.
 	itemElement layout: (BlGridLayout new columnCount: aRowElement numberOfColumns).
+	
+	aRowElement announcer when: RowSelectionStateAnnouncement send: #onSelectionStateSet to: self.
 	
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
