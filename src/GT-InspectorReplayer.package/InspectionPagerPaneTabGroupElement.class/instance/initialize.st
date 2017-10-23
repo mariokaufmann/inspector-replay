@@ -2,6 +2,8 @@ adding
 initialize
 	super initialize.
 	
+	tabElements := OrderedCollection new.
+	
 	self width: 100.
 	self layout: BlLinearLayout vertical.
 	

@@ -2,17 +2,15 @@ adding
 addTab: anElement titled: aString
 	| tabLabel |
 	
+	tabElements add: anElement.
 	tabLabel := self newTabLabel.
 	tabLabel text: (BrRopedText string: aString).
+	labelsElement addChild: tabLabel.
 	tabLabel
 		addEventHandlerOn: BlClickEvent
 		do: [ :anEvent |
-			labelsElement childrenDo: [ :aLabel | aLabel background: BlBackground transparent ].
-			anEvent currentTarget background: Color veryVeryLightGray.
-			contentElement removeChildren.
-			contentElement addChild: anElement ].
-	
-	labelsElement addChild: tabLabel.
+				self selectTabAt: (labelsElement indexOf: anEvent currentTarget)
+			].
 	
 	contentElement hasChildren
 		ifFalse: [
