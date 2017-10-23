@@ -1,3 +1,3 @@
 initialization
 initialize
-	self rootStep: InspectionAction new
+	self rootStep: InspectionStep new
