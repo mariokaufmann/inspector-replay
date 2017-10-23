@@ -1,3 +1,3 @@
 accessing
 onCreateHolder: anInfiniteElement type: anItemType
-	^ InspectionRowElementHolder new
+	^ InspectionRowElementHolder new dataSource: self; yourself

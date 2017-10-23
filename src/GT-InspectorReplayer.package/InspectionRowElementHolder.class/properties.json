@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rowElement"
+		"rowElement",
+		"dataSource"
 	],
 	"name" : "InspectionRowElementHolder",
 	"type" : "normal"

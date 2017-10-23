@@ -1,5 +1,5 @@
 accessing
-rowElement: aRowElement
+rowElement: aRowElement atPosition: aPosition
 	
 	| element |
 	rowElement := aRowElement.
@@ -12,7 +12,7 @@ rowElement: aRowElement
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
-			aRowElement selected: true.
+			self dataSource selectedPosition: aPosition.
 			aRowElement parentStep addChildStep: (InspectionStep new transformationAction: aRowElement rowSelectAction).
 			aRowElement replayer notifySessionChanged.
 			 ].
