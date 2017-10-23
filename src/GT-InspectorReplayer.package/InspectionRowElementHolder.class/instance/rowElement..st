@@ -8,7 +8,7 @@ rowElement: aRowElement
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
-			aRowElement parentStep addChildStep: aRowElement rowSelectAction.
+			aRowElement parentStep addChildStep: (InspectionStep new transformationAction: aRowElement rowSelectAction).
 			aRowElement replayer notifySessionChanged.
 			 ].
 		itemElement addChild: element.
