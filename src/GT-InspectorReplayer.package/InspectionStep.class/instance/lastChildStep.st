@@ -1,3 +1,3 @@
 accessing
 lastChildStep
- ^ childSteps at: childSteps size
+	^ childSteps at: childSteps size

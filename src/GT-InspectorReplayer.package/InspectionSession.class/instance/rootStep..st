@@ -1,3 +1,3 @@
 accessing
 rootStep: anInspectionStep
- rootStep  := anInspectionStep 
+	rootStep := anInspectionStep 

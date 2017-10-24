@@ -1,8 +1,9 @@
 executing
 executeOn: anObject
-| intermediateResult |
+	| intermediateResult |
 
-intermediateResult := anObject.
-self iterator steps do: [ :action | intermediateResult := action executeOn: intermediateResult ].
+	intermediateResult := anObject.
+	self iterator steps do: [ :action | 
+		intermediateResult := action executeOn: intermediateResult ].
 
-^ intermediateResult 
+	^ intermediateResult 

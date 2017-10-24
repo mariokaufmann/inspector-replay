@@ -6,7 +6,7 @@ createButtonsPane
 		layout: BlLinearLayout horizontal;
 		constraintsDo: [ :c |
 			c vertical fitContent.
-			c horizontal matchParent].
+			c horizontal matchParent ].
 	
 	button1 := BlTextElement new
 		padding: (BlInsets all: 10);
@@ -14,8 +14,7 @@ createButtonsPane
 		background: Color veryLightGray;
 		text: (BrRopedText string: 'Inspect session in GTInspector');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
-			self inspectionSession inspect
-			].
+			self inspectionSession inspect ].
 		
 	buttonsPane addChild: button1.
 		
@@ -25,8 +24,7 @@ createButtonsPane
 		background: Color veryLightGray;
 		text: (BrRopedText string: 'Inspect session in InspectionReplayer');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
-			InspectionReplayer openOnObject: self inspectionSession
-			].
+			InspectionReplayer openOnObject: self inspectionSession ].
 	buttonsPane addChild: button2.
 		
 	^ buttonsPane
