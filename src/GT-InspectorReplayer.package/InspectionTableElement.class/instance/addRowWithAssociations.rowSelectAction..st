@@ -2,8 +2,7 @@ adding
 addRowWithAssociations: associations rowSelectAction: anInteractionStep
 	| row |
 	row := InspectionRowElement new.
-	row replayer: self replayer.
-	row parentStep: self parentStep.
+	row tabElement: self.
 	row rowSelectAction: anInteractionStep.
 	associations do: [ :assoc |
 		row put: assoc value atColumn: assoc key.

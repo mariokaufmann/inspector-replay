@@ -1,3 +1,3 @@
 accessing
 parentStep
-	^ parentStep
+	^ tabElement parentStep

@@ -9,8 +9,7 @@
 		"columnValues",
 		"rowObject",
 		"panesDataSource",
-		"parentStep",
-		"replayer",
+		"tabElement",
 		"rowSelectAction",
 		"announcer",
 		"selected"
