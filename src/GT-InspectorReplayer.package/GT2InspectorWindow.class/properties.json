@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlSpace",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pager",
+		"inspectorModel"
+	],
+	"name" : "GT2InspectorWindow",
+	"type" : "normal"
+}

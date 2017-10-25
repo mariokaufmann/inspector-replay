@@ -1,4 +1,4 @@
 examples
 replayerOnSequenceableCollection
 	<gtExample>
-	^ InspectionReplayer openOnObject: #(2 5 12 41 34)
+	^ GT2Inspector openOnObject: #(2 5 12 41 34)

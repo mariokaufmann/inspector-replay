@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GT-InspectorReplayer-UI - Pager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"title",
+		"elementBlock"
+	],
+	"name" : "GT2PagerPaneModel",
+	"type" : "normal"
+}

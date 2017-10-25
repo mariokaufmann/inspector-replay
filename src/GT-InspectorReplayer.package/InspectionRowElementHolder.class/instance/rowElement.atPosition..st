@@ -13,7 +13,7 @@ rowElement: aRowElement atPosition: aPosition
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
-			childStep := InspectionStep new
+			childStep := GT2InspectionStep new
 				transformationAction: aRowElement rowSelectAction;
 				parentVisualActionBlock: [ 
 					self dataSource selectedPosition: aPosition.

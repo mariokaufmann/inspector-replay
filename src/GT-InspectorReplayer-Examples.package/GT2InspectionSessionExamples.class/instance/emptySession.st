@@ -3,7 +3,7 @@ emptySession
 	<gtExample>
 	| session |
 	
-	session := InspectionSession new.
+	session := GT2InspectionSession new.
 	self assert: session rootStep notNil.
 	self assert: session rootStep childSteps isEmpty.
 	

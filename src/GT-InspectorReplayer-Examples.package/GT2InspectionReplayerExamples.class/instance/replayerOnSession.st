@@ -1,4 +1,4 @@
 examples
 replayerOnSession
 	<gtExample>
-	^ InspectionReplayer openOnSession: (GT2InspectionSessionExamples new sessionWithThreeSteps)
+	^ GT2Inspector openOnSession: (GT2InspectionSessionExamples new sessionWithThreeSteps)

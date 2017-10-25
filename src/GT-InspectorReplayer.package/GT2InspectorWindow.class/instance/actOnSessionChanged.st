@@ -1,0 +1,3 @@
+callbacks
+actOnSessionChanged
+	self updatePanes

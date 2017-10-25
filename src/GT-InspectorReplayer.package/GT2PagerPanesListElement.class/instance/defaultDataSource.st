@@ -1,0 +1,3 @@
+initialization
+defaultDataSource
+	^ GT2PagerPanesListDataSource new

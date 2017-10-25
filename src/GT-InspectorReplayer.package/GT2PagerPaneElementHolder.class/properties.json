@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteElementHolder",
+	"category" : "GT-InspectorReplayer-UI - Pager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GT2PagerPaneElementHolder",
+	"type" : "normal"
+}

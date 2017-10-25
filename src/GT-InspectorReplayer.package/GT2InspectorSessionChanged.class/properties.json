@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inspectionSession"
+	],
+	"name" : "GT2InspectorSessionChanged",
+	"type" : "normal"
+}

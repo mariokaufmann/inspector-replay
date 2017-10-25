@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteDataSource",
+	"category" : "GT-InspectorReplayer-UI - Pager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"panes"
+	],
+	"name" : "GT2PagerPanesListDataSource",
+	"type" : "normal"
+}

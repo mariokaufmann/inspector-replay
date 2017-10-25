@@ -1,16 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "BlElement",
-	"category" : "GT-InspectorReplayer-UI - Tabs",
+	"category" : "GT-InspectorReplayer-UI - Pager",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parentStep",
-		"replayer",
-		"tabGroup",
-		"tabPosition"
+		"panesElement",
+		"buttonLeft",
+		"buttonRight"
 	],
-	"name" : "InspectionTabElement",
+	"name" : "GT2Pager",
 	"type" : "normal"
 }

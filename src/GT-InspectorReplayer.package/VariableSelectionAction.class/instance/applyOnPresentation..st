@@ -1,0 +1,3 @@
+executing
+applyOnPresentation: aPresentation
+	aPresentation selectAttribute: self instVarName

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BlElement",
-	"category" : "GT-InspectorReplayer-UI - PagerPane",
+	"category" : "GT-InspectorReplayer-UI - Tabs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

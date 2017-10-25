@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inspectionObject",
+		"transformationAction",
+		"childActions",
+		"childSteps",
+		"parentVisualActionBlock"
+	],
+	"name" : "GT2InspectionStep",
+	"type" : "normal"
+}
