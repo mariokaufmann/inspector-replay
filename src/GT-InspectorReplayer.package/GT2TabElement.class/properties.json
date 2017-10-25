@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parentStep",
-		"replayer",
 		"tabGroup",
 		"tabPosition"
 	],
-	"name" : "InspectionTabElement",
+	"name" : "GT2TabElement",
 	"type" : "normal"
 }

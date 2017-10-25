@@ -8,10 +8,8 @@
 	"instvars" : [
 		"tabElements",
 		"labelsElement",
-		"contentElement",
-		"parentStep",
-		"replayer"
+		"contentElement"
 	],
-	"name" : "InspectionPagerPaneTabGroupElement",
+	"name" : "GT2TabGroupElement",
 	"type" : "normal"
 }

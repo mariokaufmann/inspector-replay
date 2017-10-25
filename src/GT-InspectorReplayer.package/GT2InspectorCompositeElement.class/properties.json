@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BlSpace",
+	"super" : "GT2TabGroupElement",
 	"category" : "GT-InspectorReplayer-UI - Inspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"pager",
-		"inspectorModel"
-	],
-	"name" : "GT2InspectorWindow",
+	"instvars" : [ ],
+	"name" : "GT2InspectorCompositeElement",
 	"type" : "normal"
 }

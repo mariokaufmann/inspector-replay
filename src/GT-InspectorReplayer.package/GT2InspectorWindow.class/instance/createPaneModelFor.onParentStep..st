@@ -1,8 +1,14 @@
 updating
 createPaneModelFor: anObject onParentStep: aStep
-	| tabs |
-	tabs := InspectionPagerPaneTabGroupElement 
-		onObject: anObject 
-		onParentStep: aStep
-		withNavigationBlock: [ :anAction | self inspectorModel addNewStepForAction: anAction withParent: aStep ] . 
-	^ GT2PagerPaneModel new title: anObject gtDisplayString; elementBlock: [tabs]
+	| composite |
+	
+	composite := GT2InspectorCompositeElement new.
+	(anObject gt2InspectorPresentationsIn: composite) do: [ :presentation |
+		presentation navigationBlock: [ :anAction | 
+			self inspectorModel addNewStepForAction: anAction withParent: aStep ].
+		presentation initializeContent.
+		composite addTab: presentation titled: presentation title ].
+		
+	^ GT2PagerPaneModel new 
+		title: anObject gtDisplayString; 
+		elementBlock: [composite]
