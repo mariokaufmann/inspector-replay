@@ -1,8 +1,8 @@
 adding
-addTab: anElement titled: aString
+addTab: aTabElement titled: aString
 	| tabLabel |
 	
-	tabElements add: anElement.
+	tabElements add: aTabElement.
 	tabLabel := self newTabLabel.
 	tabLabel text: (BrRopedText string: aString).
 	labelsElement addChild: tabLabel.
@@ -14,5 +14,5 @@ addTab: anElement titled: aString
 	
 	contentElement hasChildren
 		ifFalse: [
-			contentElement addChild: anElement.
+			contentElement addChild: aTabElement.
 			tabLabel background: Color veryVeryLightGray. ]
