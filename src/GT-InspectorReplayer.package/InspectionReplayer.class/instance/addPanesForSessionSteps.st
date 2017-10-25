@@ -8,4 +8,5 @@ addPanesForSessionSteps
 		self window panesDataSource addPane: (InspectionPagerPane 
 			createFromObject: intermediateResult 
 			onParentStep: step 
-			inReplayer: self) ].
+			inReplayer: self).
+		step parentVisualActionBlock value. ].
