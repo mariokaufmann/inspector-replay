@@ -1,7 +1,7 @@
 accessing
 rowElement: aRowElement atPosition: aPosition
 	
-	| element |
+	| element childStep |
 	rowElement := aRowElement.
 	
 	itemElement removeChildren.
@@ -13,7 +13,13 @@ rowElement: aRowElement atPosition: aPosition
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
-			aRowElement parentStep addChildStep: (InspectionStep new transformationAction: aRowElement rowSelectAction).
+			childStep := InspectionStep new
+				transformationAction: aRowElement rowSelectAction;
+				parentVisualActionBlock: [ 
+					self dataSource selectedPosition: aPosition.
+					aRowElement tabElement tabGroup selectTabAt: (aRowElement tabElement tabPosition).
+					 ].
+			aRowElement parentStep addChildStep: childStep.
 			aRowElement replayer notifySessionChanged.
 			 ].
 		itemElement addChild: element.

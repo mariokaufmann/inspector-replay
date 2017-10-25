@@ -3,6 +3,7 @@ addTab: aTabElement titled: aString
 	| tabLabel |
 	
 	tabElements add: aTabElement.
+	aTabElement tabPosition: tabElements size.
 	tabLabel := self newTabLabel.
 	tabLabel text: (BrRopedText string: aString).
 	labelsElement addChild: tabLabel.

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"parentStep",
 		"replayer",
-		"tabGroup"
+		"tabGroup",
+		"tabPosition"
 	],
 	"name" : "InspectionTabElement",
 	"type" : "normal"

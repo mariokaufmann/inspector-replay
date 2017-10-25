@@ -9,7 +9,8 @@
 		"inspectionObject",
 		"transformationAction",
 		"childActions",
-		"childSteps"
+		"childSteps",
+		"parentVisualActionBlock"
 	],
 	"name" : "InspectionStep",
 	"type" : "normal"
