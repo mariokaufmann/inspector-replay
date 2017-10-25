@@ -7,7 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"rowsElement",
-		"title"
+		"title",
+		"displayBlock",
+		"rowSelectActionBlock",
+		"columnsAssociations"
 	],
 	"name" : "InspectionTableElement",
 	"type" : "normal"

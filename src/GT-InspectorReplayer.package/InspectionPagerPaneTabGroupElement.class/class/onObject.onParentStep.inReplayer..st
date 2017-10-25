@@ -9,6 +9,7 @@ onObject: anObject onParentStep: anInteractionStep inReplayer: anInspectionRepla
 		c vertical matchParent ].
 	
 	(anObject gt2InspectorPresentationsIn: instance) do: [ :presentation |
+		 	presentation initializeContent.
 			instance addTab: presentation titled: presentation title ].
 		
 	^ instance

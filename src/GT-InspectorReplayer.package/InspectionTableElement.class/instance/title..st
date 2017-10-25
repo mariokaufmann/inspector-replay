@@ -1,3 +1,3 @@
-accessing
+scripting
 title: anObject
 	title := anObject
