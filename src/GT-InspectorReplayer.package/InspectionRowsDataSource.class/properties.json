@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rows"
+		"rows",
+		"navigationBlock"
 	],
 	"name" : "InspectionRowsDataSource",
 	"type" : "normal"

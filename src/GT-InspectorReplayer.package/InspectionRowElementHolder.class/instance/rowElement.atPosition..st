@@ -1,7 +1,7 @@
 accessing
 rowElement: aRowElement atPosition: aPosition
 	
-	| element childStep |
+	| element |
 	rowElement := aRowElement.
 	
 	itemElement removeChildren.
@@ -13,14 +13,5 @@ rowElement: aRowElement atPosition: aPosition
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
-			childStep := GT2InspectionStep new
-				transformationAction: aRowElement rowSelectAction;
-				parentVisualActionBlock: [ 
-					self dataSource selectedPosition: aPosition.
-					aRowElement tabElement tabGroup selectTabAt: (aRowElement tabElement tabPosition).
-					 ].
-			aRowElement parentStep addChildStep: childStep.
-			aRowElement replayer notifySessionChanged.
-			 ].
-		itemElement addChild: element.
-		 ]
+			self dataSource navigationBlock value: aRowElement rowSelectAction ].
+		itemElement addChild: element  ]

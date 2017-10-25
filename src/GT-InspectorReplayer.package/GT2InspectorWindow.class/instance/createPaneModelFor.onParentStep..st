@@ -4,5 +4,5 @@ createPaneModelFor: anObject onParentStep: aStep
 	tabs := InspectionPagerPaneTabGroupElement 
 		onObject: anObject 
 		onParentStep: aStep
-		inReplayer: self inspectorModel. 
+		withNavigationBlock: [ :anAction | self inspectorModel addNewStepForAction: anAction withParent: aStep ] . 
 	^ GT2PagerPaneModel new title: anObject gtDisplayString; elementBlock: [tabs]
