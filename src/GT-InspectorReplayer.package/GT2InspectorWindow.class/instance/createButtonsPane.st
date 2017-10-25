@@ -22,7 +22,7 @@ createButtonsPane
 		padding: (BlInsets all: 10);
 		margin: (BlInsets right: 20);
 		background: Color veryLightGray;
-		text: (BrRopedText string: 'Inspect session in InspectionReplayer');
+		text: (BrRopedText string: 'Inspect session in GT2Inspector');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			GT2Inspector openOnObject: self inspectionSession ].
 	buttonsPane addChild: button2.
