@@ -4,4 +4,4 @@ addNewStepForAction: anAction withParent: aParentStep
 	childStep := GT2InspectionStep new
 		transformationAction: anAction.
 	aParentStep addChildStep: childStep.
-	self notifySessionChanged.
+	self notifySessionChangedAfterStep: aParentStep.

@@ -1,0 +1,3 @@
+callbacks
+actOnSessionChanged: anAnnouncement
+	self updatePanesAfterStep: anAnnouncement lastValidStep.

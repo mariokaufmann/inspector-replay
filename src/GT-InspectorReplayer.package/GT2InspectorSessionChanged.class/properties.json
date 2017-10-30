@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inspectionSession"
+		"inspectionSession",
+		"lastValidStep"
 	],
 	"name" : "GT2InspectorSessionChanged",
 	"type" : "normal"

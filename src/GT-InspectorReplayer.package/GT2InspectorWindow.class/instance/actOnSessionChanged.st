@@ -1,3 +1,0 @@
-callbacks
-actOnSessionChanged
-	self updatePanes
