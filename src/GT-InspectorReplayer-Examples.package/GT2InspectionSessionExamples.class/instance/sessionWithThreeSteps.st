@@ -5,10 +5,10 @@ sessionWithThreeSteps
 	
 	session := self emptySession.
 	
-	codeStep := CodeAction withCode: '^ self asOrderedCollection'.
-	indexStep := IndexSelectionAction withIndex: 2.
+	codeStep := GT2InspectionStep new transformationAction: (CodeAction withCode: '^ self asOrderedCollection').
+	indexStep := GT2InspectionStep new transformationAction: (IndexSelectionAction withIndex: 2).
 	codeStep addChildStep: indexStep.
-	keyStep := KeyAction withKey: 'testKey'.
+	keyStep := GT2InspectionStep new transformationAction: (KeyAction withKey: 'testKey').
 	indexStep addChildStep: keyStep.
 	
 	session rootStep addChildStep: codeStep.
