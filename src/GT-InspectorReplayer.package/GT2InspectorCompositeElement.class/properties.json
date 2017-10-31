@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"elementRegistrationBlock"
+	],
 	"name" : "GT2InspectorCompositeElement",
 	"type" : "normal"
 }
