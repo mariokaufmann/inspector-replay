@@ -5,6 +5,8 @@ createCompositeFor: anObject onParentStep: aStep
 	(anObject gt2InspectorPresentationsIn: composite) do: [ :presentation |
 		presentation navigationBlock: [ :anAction | 
 			self inspectorModel addNewStepForAction: anAction withParent: aStep ].
+		presentation elementRegistrationBlock: [ :anElement | 
+			aStep addUIAction: (ClickUIAction onPath: anElement indicesInAncestors) ].
 		presentation initializeContent.
 		composite addTab: presentation titled: presentation title ].
 	^ composite

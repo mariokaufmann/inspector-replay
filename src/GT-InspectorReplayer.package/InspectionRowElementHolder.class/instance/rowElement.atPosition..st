@@ -13,5 +13,6 @@ rowElement: aRowElement atPosition: aPosition
 		element := self elementForText: (value printString).
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
-			self dataSource navigationBlock value: aRowElement rowSelectAction ].
+			self dataSource navigationBlock value: aRowElement rowSelectAction.
+			self dataSource elementRegistrationBlock value: itemElement ].
 		itemElement addChild: element  ]

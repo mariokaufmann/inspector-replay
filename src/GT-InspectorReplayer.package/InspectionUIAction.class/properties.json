@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inspectionObject",
-		"transformationAction",
-		"childSteps",
-		"uiActions"
+		"path"
 	],
-	"name" : "GT2InspectionStep",
+	"name" : "InspectionUIAction",
 	"type" : "normal"
 }

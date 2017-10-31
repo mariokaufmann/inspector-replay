@@ -16,6 +16,5 @@ updatePanesAfterStep: anInspectionStep
 		step inspectionObject: intermediateResult.
 		self pager addPane: (self 
 			createPaneModelFor: intermediateResult
-			onParentStep: step).
-		step parentVisualActionBlock value ].
+			onParentStep: step). ].
 	

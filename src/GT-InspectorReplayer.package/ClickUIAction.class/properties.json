@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "InspectionUIAction",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClickUIAction",
+	"type" : "normal"
+}
