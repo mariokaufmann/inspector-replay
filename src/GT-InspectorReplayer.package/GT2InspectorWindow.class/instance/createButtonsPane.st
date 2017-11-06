@@ -1,6 +1,6 @@
 initialization
 createButtonsPane
-	| buttonsPane button1 button2 |
+	| buttonsPane button1 button2 button3 newWindow |
 	buttonsPane := BlElement new.
 	buttonsPane margin: (BlInsets all: 20);
 		layout: BlLinearLayout horizontal;
@@ -24,7 +24,17 @@ createButtonsPane
 		background: Color veryLightGray;
 		text: (BrRopedText string: 'Inspect session in GT2Inspector');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
-			GT2Inspector openOnObject: self inspectionSession ].
+			GT2InspectorWindow openOnModel: (GT2Inspector on: self inspectionSession) ].
 	buttonsPane addChild: button2.
+	
+	button3 := BlTextElement new
+		padding: (BlInsets all: 10);
+		margin: (BlInsets right: 20);
+		background: Color veryLightGray;
+		text: (BrRopedText string: 'Replay session in new GT2Inspector');
+		addEventHandlerOn: BlClickEvent do: [ :anEvent |
+			newWindow := GT2InspectorWindow openOnModel: (GT2Inspector on: self inspectionSession inspectionObject). 
+			uiActionRecorder replayOn: newWindow root withDelay: (Delay forSeconds: 1). ].
+	buttonsPane addChild: button3.
 		
 	^ buttonsPane
