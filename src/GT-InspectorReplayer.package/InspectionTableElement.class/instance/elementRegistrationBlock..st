@@ -1,3 +1,0 @@
-accessing
-elementRegistrationBlock: aBlock
-	self rowsElement dataSource elementRegistrationBlock: aBlock

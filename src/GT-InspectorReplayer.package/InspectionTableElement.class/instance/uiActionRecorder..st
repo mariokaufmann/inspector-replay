@@ -1,0 +1,3 @@
+accessing
+uiActionRecorder: aUIActionRecorder
+	self rowsElement dataSource uiActionRecorder: aUIActionRecorder

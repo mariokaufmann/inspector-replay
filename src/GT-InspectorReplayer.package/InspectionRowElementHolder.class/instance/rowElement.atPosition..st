@@ -14,5 +14,5 @@ rowElement: aRowElement atPosition: aPosition
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
 			self dataSource navigationBlock value: aRowElement rowSelectAction.
-			self dataSource elementRegistrationBlock value: itemElement ].
+			self dataSource uiActionRecorder recordClickOnElement: itemElement ].
 		itemElement addChild: element  ]

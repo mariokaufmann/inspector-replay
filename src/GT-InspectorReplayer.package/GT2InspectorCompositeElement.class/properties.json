@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"elementRegistrationBlock"
+		"elementRegistrationBlock",
+		"uiActionRecorder"
 	],
 	"name" : "GT2InspectorCompositeElement",
 	"type" : "normal"

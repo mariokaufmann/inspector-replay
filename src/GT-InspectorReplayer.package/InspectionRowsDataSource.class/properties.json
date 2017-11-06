@@ -8,7 +8,7 @@
 	"instvars" : [
 		"rows",
 		"navigationBlock",
-		"elementRegistrationBlock"
+		"uiActionRecorder"
 	],
 	"name" : "InspectionRowsDataSource",
 	"type" : "normal"

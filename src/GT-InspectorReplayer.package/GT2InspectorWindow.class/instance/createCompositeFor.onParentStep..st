@@ -1,17 +1,14 @@
 as yet unclassified
 createCompositeFor: anObject onParentStep: aStep
-	| composite elementRegistrationBlock |
+	| composite |
 	composite := GT2InspectorCompositeElement new.
-	
-	elementRegistrationBlock := [ :anElement | 
-			aStep addUIAction: (ClickUIAction onPath: anElement indicesInAncestors) ].
 		
-	composite elementRegistrationBlock: elementRegistrationBlock.
+	composite uiActionRecorder: uiActionRecorder.
 	
 	(anObject gt2InspectorPresentationsIn: composite) do: [ :presentation |
 		presentation navigationBlock: [ :anAction | 
 			self inspectorModel addNewStepForAction: anAction withParent: aStep ].
-		presentation elementRegistrationBlock: elementRegistrationBlock.
+		presentation uiActionRecorder: uiActionRecorder.
 		presentation initializeContent.
 		composite addTab: presentation titled: presentation title ].
 	^ composite
