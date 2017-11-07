@@ -1,3 +1,3 @@
 accessing
-buffer: anOrderedCollection
-	buffer := anOrderedCollection
+buffer: anObject
+	buffer := anObject
