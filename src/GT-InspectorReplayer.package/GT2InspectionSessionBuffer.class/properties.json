@@ -2,15 +2,13 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "GT-InspectorReplayer-Model",
-	"classinstvars" : [
-		"sessionBuffer"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rootStep",
-		"inspectionObject"
+		"buffer",
+		"currentIndex"
 	],
-	"name" : "GT2InspectionSession",
+	"name" : "GT2InspectionSessionBuffer",
 	"type" : "normal"
 }

@@ -2,5 +2,5 @@ executing
 executeOn: anElement
 	| relevantElement |
 	relevantElement := self navigateToChildElementOf: anElement.
-	relevantElement dispatchEvent: (BlClickEvent new).
+	BlSpace simulateClickOn: anElement.
 	relevantElement topMostParent forceLayout.
