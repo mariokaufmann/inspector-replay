@@ -1,3 +1,3 @@
 as yet unclassified
 onSelectionStateSet
-	itemElement background: (rowElement selected ifTrue: [Color lightGray] ifFalse: [Color transparent])
+	itemElement background: (rowElement selected ifTrue: [Color lightBlue] ifFalse: [Color transparent])

@@ -1,5 +1,7 @@
 as yet unclassified
 replayOn: anElement withDelay: aDelay
-	uiActions do: [ :anAction |
-		anAction executeOn: anElement.
-		aDelay wait. ]
+	10 milliSeconds asDelay wait.
+	BlUniverse defer: [ 
+		uiActions do: [ :anAction |
+			anAction executeOn: anElement. 
+			aDelay wait. ] ]

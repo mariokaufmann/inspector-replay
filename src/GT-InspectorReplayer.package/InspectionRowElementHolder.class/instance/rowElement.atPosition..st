@@ -11,6 +11,9 @@ rowElement: aRowElement atPosition: aPosition
 	
 	aRowElement columnValues valuesDo: [ :value |
 		element := self elementForText: (value printString).
+		element constraintsDo: [ :c |
+			c horizontal matchParent.
+			c vertical fitContent ].
 		element addEventHandlerOn: BlClickEvent  do: [ :anEvent |
 			self dataSource selectedPosition: aPosition.
 			self dataSource navigationBlock value: aRowElement rowSelectAction.
