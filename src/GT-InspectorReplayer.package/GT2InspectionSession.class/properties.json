@@ -9,7 +9,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"rootStep",
-		"inspectionObject"
+		"inspectionObject",
+		"uiActionRecorder"
 	],
 	"name" : "GT2InspectionSession",
 	"type" : "normal"

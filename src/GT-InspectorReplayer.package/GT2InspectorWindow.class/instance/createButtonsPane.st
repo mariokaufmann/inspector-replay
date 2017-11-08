@@ -34,7 +34,7 @@ createButtonsPane
 		text: (BrRopedText string: 'Replay session in new GT2Inspector');
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			newWindow := GT2InspectorWindow openOnModel: (GT2Inspector on: self inspectionSession inspectionObject). 
-			uiActionRecorder replayOn: newWindow root withDelay: (Delay forSeconds: 1). ].
+			self inspectionSession uiActionRecorder replayOn: newWindow root withDelay: (Delay forSeconds: 1). ].
 	buttonsPane addChild: button3.
 		
 	^ buttonsPane
