@@ -8,7 +8,7 @@ pane: aPagerPane
 	titleText := BrRopedText string: aPagerPane title.
 	titleElement := BlTextElement new.
 	titleElement text: titleText.
-	titleElement padding: (BlInsets all: 10).
+	titleElement padding: (BlInsets top: 10 bottom: 10).
 	
 	itemElement addChild: titleElement.
 	paneElement := aPagerPane paneElement.

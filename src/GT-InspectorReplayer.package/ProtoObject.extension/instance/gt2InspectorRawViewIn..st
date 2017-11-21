@@ -4,7 +4,7 @@ gt2InspectorRawViewIn: composite
 	^  composite table
 		title: 'Raw';
 		display: [ self gtInspectorVariableValuePairs ];
-		column: 'Property' evaluated: [ :assoc | assoc key asString ];
+		column: 'Property' evaluated: [ :assoc | assoc key ];
 		column: 'Value' evaluated: [ :assoc | assoc value ];
 		rowSelectAction: [ :assoc | (VariableSelectionAction withName: assoc key) ].
 		
