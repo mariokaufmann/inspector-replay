@@ -1,3 +1,4 @@
 *GT-InspectorReplayer
 recordingAction
-	^ BlChildSelectionAction withIndex: self childIndexInParent
+	^ ClickUIAction onPath: self actionPath.
+	"BlChildSelectionAction withIndex: self childIndexInParent"

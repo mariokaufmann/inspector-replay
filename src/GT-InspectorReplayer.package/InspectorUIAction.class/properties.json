@@ -8,6 +8,6 @@
 	"instvars" : [
 		"path"
 	],
-	"name" : "InspectionUIAction",
+	"name" : "InspectorUIAction",
 	"type" : "normal"
 }

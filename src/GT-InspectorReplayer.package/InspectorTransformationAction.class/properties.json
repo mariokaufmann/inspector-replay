@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "InspectionAction",
+	"name" : "InspectorTransformationAction",
 	"type" : "normal"
 }
