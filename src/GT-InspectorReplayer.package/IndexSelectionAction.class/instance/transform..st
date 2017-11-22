@@ -1,3 +1,3 @@
 executing
-executeOn: anOrderedCollection
+transform: anOrderedCollection
 	^ anOrderedCollection at: index

@@ -1,5 +1,5 @@
 executing
-executeOn: anObject
+transform: anObject
 	| childCollection |
 	childCollection := childBlock value: anObject.
 	^ childCollection at: index.

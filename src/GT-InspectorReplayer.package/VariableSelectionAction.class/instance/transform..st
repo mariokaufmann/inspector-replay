@@ -1,3 +1,3 @@
 executing
-executeOn: anObject
+transform: anObject
 ^ anObject instVarNamed: self instVarName

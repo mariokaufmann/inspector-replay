@@ -1,3 +1,3 @@
 executing
-executeOn: aDictionary
+transform: aDictionary
 	^ aDictionary at: key

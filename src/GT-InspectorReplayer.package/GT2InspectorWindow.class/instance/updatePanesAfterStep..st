@@ -12,7 +12,7 @@ updatePanesAfterStep: anInspectionStep
 	lastStepIndex + 1 to: steps size do: [ :stepIndex |
 		| step |
 		step := steps at: stepIndex.
-		intermediateResult := step transformationAction executeOn: intermediateResult.
+		intermediateResult := step transformationAction transform: intermediateResult.
 		step inspectionObject: intermediateResult.
 		self pager addPane: (self 
 			createPaneModelFor: intermediateResult
