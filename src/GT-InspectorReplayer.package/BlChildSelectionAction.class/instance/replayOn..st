@@ -1,3 +1,3 @@
 executing
 replayOn: aBlElement
-	^ ClickUIAction new executeOn: (aBlElement children at: index)
+	^ (ClickUIAction onPath: path) replayOn: (aBlElement children at: index)
