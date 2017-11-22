@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "InspectorUIAction",
+	"super" : "Object",
 	"category" : "GT-InspectorReplayer-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
