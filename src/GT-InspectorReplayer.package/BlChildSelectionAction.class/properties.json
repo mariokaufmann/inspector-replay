@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "InspectorUIAction",
+	"super" : "InspectorPathAction",
 	"category" : "GT-InspectorReplayer-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "BlChildClickAction",
+	"instvars" : [
+		"index"
+	],
+	"name" : "BlChildSelectionAction",
 	"type" : "normal"
 }
