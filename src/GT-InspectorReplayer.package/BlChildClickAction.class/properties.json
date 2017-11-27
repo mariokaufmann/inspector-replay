@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"index"
-	],
-	"name" : "BlChildSelectionAction",
+	"instvars" : [ ],
+	"name" : "BlChildClickAction",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 *GT-InspectorReplayer
 buildChildSelectionAction
-	^ BlChildSelectionAction withIndex: self childIndexInParent
+	^ BlChildClickAction withIndex: self childIndexInParent
