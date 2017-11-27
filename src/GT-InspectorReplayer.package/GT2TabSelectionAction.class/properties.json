@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "InspectorPathAction",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tabName"
+	],
+	"name" : "GT2TabSelectionAction",
+	"type" : "normal"
+}

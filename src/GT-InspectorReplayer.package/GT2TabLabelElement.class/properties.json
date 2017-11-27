@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlTextElement",
+	"category" : "GT-InspectorReplayer-UI - Tabs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tabName"
+	],
+	"name" : "GT2TabLabelElement",
+	"type" : "normal"
+}

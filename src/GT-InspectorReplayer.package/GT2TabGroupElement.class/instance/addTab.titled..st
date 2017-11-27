@@ -4,7 +4,7 @@ addTab: aTabElement titled: aString
 	
 	tabElements add: aTabElement.
 	aTabElement tabPosition: tabElements size.
-	tabLabel := self newTabLabel.
+	tabLabel := GT2TabLabelElement withTabName: aString.
 	tabLabel text: (BrRopedText string: aString).
 	labelsElement addChild: tabLabel.
 	tabLabel

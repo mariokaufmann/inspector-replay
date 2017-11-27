@@ -12,8 +12,8 @@ setupUI
 						c vertical matchParent.
 						c horizontal matchParent  ].
 					
-	"mainPane addChild: self createButtonsPane."
-	
+	mainPane addChild: self createButtonsPane.
+
 	pager := GT2Pager new.
 	pager constraintsDo: [ :c |
 		c horizontal matchParent.
