@@ -1,3 +1,0 @@
-initialization
-ensureRowVisibleFor: row
- self shouldBeImplemented
