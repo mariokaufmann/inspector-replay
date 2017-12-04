@@ -6,6 +6,7 @@ rowElement: aRowElement atPosition: aPosition
 	
 	itemElement removeChildren.
 	itemElement layout: (BlGridLayout new columnCount: aRowElement numberOfColumns).
+	itemElement recordingAction: aRowElement rowSelectAction.
 	
 	aRowElement announcer when: RowSelectionStateAnnouncement send: #onSelectionStateSet to: self.
 	

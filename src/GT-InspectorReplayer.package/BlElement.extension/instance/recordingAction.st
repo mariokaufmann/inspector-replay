@@ -1,3 +1,4 @@
 *GT-InspectorReplayer
 recordingAction
-	^ self buildChildSelectionAction
+	^ self userData at: self recordingActionKey ifAbsent: [ self buildChildSelectionAction ]
+		
