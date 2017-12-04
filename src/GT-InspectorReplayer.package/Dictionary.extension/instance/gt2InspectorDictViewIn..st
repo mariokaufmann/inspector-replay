@@ -5,5 +5,5 @@ gt2InspectorDictViewIn: composite
 		title: 'Items';
 		display: [ self  associations ];
 		column: 'Key' evaluated: [ :value :index | value key ];
-		column: 'Aalue' evaluated: [ :value | value value ];
+		column: 'Value' evaluated: [ :value | value value ];
 		rowSelectAction: [ :value :index | (KeyAction withKey: value key) ].
