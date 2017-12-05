@@ -1,9 +1,10 @@
 initialization
-pane: aPagerPane
+pane: aPagerPane atPosition: aPosition
 	| titleElement titleText paneElement |
 
 	itemElement removeChildren.
 	itemElement width: 400.
+	itemElement recordingAction: (GT2PaneSelectionAction withPaneIndex: aPosition).
 
 	titleText := BrRopedText string: aPagerPane title.
 	titleElement := BlTextElement new.
