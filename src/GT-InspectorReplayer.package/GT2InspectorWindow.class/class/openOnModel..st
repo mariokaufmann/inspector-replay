@@ -2,4 +2,5 @@ as yet unclassified
 openOnModel: anInspectorModel
 	^ self new
 		inspectorModel: anInspectorModel;
-		show
+		show;
+		position: 100@100

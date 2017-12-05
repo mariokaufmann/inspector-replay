@@ -1,7 +1,7 @@
 initialization
 setupUI
 	| mainPane |
-	self extent: 1000@600.
+	self extent: 1200@600.
 	self title: 'Inspector Replayer'.
 	
 	mainPane := BlElement new.
