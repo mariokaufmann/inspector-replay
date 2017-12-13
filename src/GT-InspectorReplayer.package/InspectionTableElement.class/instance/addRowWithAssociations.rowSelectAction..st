@@ -1,7 +1,7 @@
 adding
 addRowWithAssociations: associations rowSelectAction: anInteractionStep
 	| row |
-	row := InspectionRowElement new.
+	row := InspectionRow new.
 	row tabElement: self.
 	row rowSelectAction: anInteractionStep.
 	associations do: [ :assoc |

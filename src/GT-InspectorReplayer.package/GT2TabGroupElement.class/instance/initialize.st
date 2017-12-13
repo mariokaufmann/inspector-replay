@@ -15,7 +15,7 @@ initialize
 		
 	contentElement := BlElement new
 		layout: BlLinearLayout new;
-		background: Color veryVeryLightGray lighter;
+		background: self backgroundColor;
 		constraintsDo: [ :c |
 			c horizontal matchParent.
 			c vertical matchParent ].

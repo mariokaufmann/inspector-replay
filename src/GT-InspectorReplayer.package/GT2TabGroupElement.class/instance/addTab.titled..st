@@ -15,4 +15,4 @@ addTab: aTabElement titled: aString
 	contentElement hasChildren
 		ifFalse: [
 			contentElement addChild: aTabElement.
-			tabLabel background: Color veryVeryLightGray lighter. ]
+			tabLabel background: self backgroundColor ]

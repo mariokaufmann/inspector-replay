@@ -1,3 +1,3 @@
 *GT-InspectorReplayer
 recordingActionKey
- ^ #customRecordingAction
+	^ #customRecordingAction

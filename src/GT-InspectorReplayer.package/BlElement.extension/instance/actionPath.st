@@ -1,6 +1,6 @@
 *GT-InspectorReplayer
 actionPath
 	<return: #OrderedCollection>
-	self parent isNil 
-		ifTrue: [ ^ OrderedCollection new ]
-		ifFalse: [ ^ self parent actionPath add: self recordingAction; yourself ]
+	^ self hasParent
+		ifTrue: [ self parent actionPath add: self recordingAction; yourself ]
+		ifFalse: [ OrderedCollection new ]
