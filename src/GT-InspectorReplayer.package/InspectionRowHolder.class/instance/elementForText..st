@@ -1,7 +1,12 @@
 as yet unclassified
 elementForText: aString
-	| text |
-	text := BrRopedText string: aString.
-	^ BlTextElement new
-		text: text;
+	| aText |
+	
+	aText := aString asRopedText.
+	aText attributes: {
+		BrFontFamilyAttribute named: 'Helvetica Neue'
+	}.
+
+	^ BlShrinkingTextElement new
+		text: aText;
 		yourself

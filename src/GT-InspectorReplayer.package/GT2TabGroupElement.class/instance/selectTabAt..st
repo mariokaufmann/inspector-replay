@@ -1,6 +1,6 @@
 accessing
 selectTabAt: aPosition
-	labelsElement childrenDo: [ :aLabel | aLabel background: BlBackground transparent ].
-	(labelsElement children at: aPosition) background: self backgroundColor.
+	labelsElement childrenDo: [ :aLabel | aLabel beDeselected ].
+	(labelsElement children at: aPosition) beSelected.
 	contentElement removeChildren.
 	contentElement addChild: (tabElements at: aPosition)

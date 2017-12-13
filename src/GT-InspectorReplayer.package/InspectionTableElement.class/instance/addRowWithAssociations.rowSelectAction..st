@@ -5,6 +5,5 @@ addRowWithAssociations: associations rowSelectAction: anInteractionStep
 	row tabElement: self.
 	row rowSelectAction: anInteractionStep.
 	associations do: [ :assoc |
-		row put: assoc value atColumn: assoc key.
-		].
-	self rowsElement dataSource addRow: row.
+		row put: assoc value atColumn: assoc key ].
+	self rowsElement dataSource addRow: row

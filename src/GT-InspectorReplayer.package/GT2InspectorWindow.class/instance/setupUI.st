@@ -8,10 +8,10 @@ setupUI
 	
 	mainPane margin: (BlInsets all: 10).
 	mainPane layout: BlLinearLayout vertical;
-				constraintsDo: [ :c |
-						c vertical matchParent.
-						c horizontal matchParent  ].
-					
+		constraintsDo: [ :c |
+			c vertical matchParent.
+			c horizontal matchParent  ].
+		
 	mainPane addChild: self createButtonsPane.
 
 	pager := GT2Pager new.
@@ -23,6 +23,6 @@ setupUI
 
 	self root addChild: mainPane.
 	self root addEventHandler:
-				(BlEventHandler
-					on: BlDblClickEvent
-					do: [ :evt | evt modifiers isShift ifTrue: [ BlElementSelection on: evt target ] ]).
+		(BlEventHandler
+			on: BlDblClickEvent
+			do: [ :evt | evt modifiers isShift ifTrue: [ BlElementSelection on: evt target ] ]).

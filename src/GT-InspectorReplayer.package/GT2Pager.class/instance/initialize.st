@@ -2,27 +2,35 @@ initialization
 initialize
 	super initialize.
 	
-	self layout: BlLinearLayout horizontal.
+	self layout: BlFrameLayout new.
 	
 	panesElement := GT2PagerPanesListElement new.
-	
 	panesElement constraintsDo: [ :c |
 		c horizontal matchParent.
 		c vertical matchParent ].
 
-	buttonLeft := BlTextElement new
-		padding: (BlInsets all: 10);
-		margin: (BlInsets right: 20);
-		background: Color veryLightGray;
-		text: (BrRopedText string: '< Left');
-		addEventHandlerOn: BlClickEvent do: [ :anEvent |
+	buttonLeft := BlElement new.
+	buttonLeft background: (
+		BlLinearGradientPaint horizontal from: (Color white alpha: 1) to: (Color white alpha: 0)).
+	buttonLeft effect: (BlBlurBelowEffect radius: 0.5).
+	buttonLeft constraintsDo: [ :c |
+		c vertical matchParent.
+		c horizontal exact: 55.
+		c frame horizontal alignLeft.
+		c frame vertical alignCenter ];
+	addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			panesElement smoothScrollBy: panesElement width negated @ 0 ].
-	buttonRight := BlTextElement new
-		padding: (BlInsets all: 10);
-		margin: (BlInsets left: 20);
-		background: Color veryLightGray;
-		text: (BrRopedText string: 'Right >');
-		addEventHandlerOn: BlClickEvent do: [ :anEvent |
+		
+	buttonRight := BlElement new.
+	buttonRight background: (
+		BlLinearGradientPaint horizontal from: (Color white alpha: 0) to: (Color white alpha: 1)).
+	buttonRight effect: (BlBlurBelowEffect radius: 0.5).
+	buttonRight constraintsDo: [ :c |
+		c vertical matchParent.
+		c horizontal exact: 55.
+		c frame horizontal alignRight.
+		c frame vertical alignCenter ];
+	addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			panesElement smoothScrollBy: panesElement width @ 0 ].
 
-	self addChildren: { buttonLeft . panesElement . buttonRight }
+	self addChildren: { panesElement . buttonLeft . buttonRight }
