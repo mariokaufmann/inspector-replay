@@ -1,0 +1,3 @@
+visiting
+visitArgumentNode: anArgumentNode
+	anArgumentNode name: GT2InspectionCodeGenerator tempVariableName

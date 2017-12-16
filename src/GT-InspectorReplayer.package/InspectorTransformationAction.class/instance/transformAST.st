@@ -1,3 +1,6 @@
 executing
 transformAST
- ^ (self class methodDict at: #transform:) ast
+ | ast |
+	ast := (self class methodDict at: #transform:) ast.
+	(InspectorTransformationActionVisitor onAction: self) visitMethodNode: ast.
+	^ ast
