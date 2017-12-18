@@ -7,4 +7,4 @@ printTemporariesOfActions: aCollection onStream: aStream
 	temporaries do: [ :temporaryNode | 
 		aStream nextPutAll: temporaryNode formattedCode.
 		aStream nextPut: Character space. ].
-	aStream nextPut: '|'.
+	aStream nextPutAll: '|'.
