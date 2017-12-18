@@ -20,6 +20,8 @@ initialize
 		c frame vertical alignCenter ];
 	addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			panesElement smoothScrollBy: panesElement width negated @ 0 ].
+	buttonLeft layout: BlFrameLayout new.
+	buttonLeft addChild: self leftArrowElement.
 		
 	buttonRight := BlElement new.
 	buttonRight background: (
@@ -32,5 +34,7 @@ initialize
 		c frame vertical alignCenter ];
 	addEventHandlerOn: BlClickEvent do: [ :anEvent |
 			panesElement smoothScrollBy: panesElement width @ 0 ].
+	buttonRight layout: BlFrameLayout new.
+	buttonRight addChild: self rightArrowElement.
 
 	self addChildren: { panesElement . buttonLeft . buttonRight }
