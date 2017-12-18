@@ -19,9 +19,9 @@ createButtonsPane
 		
 	button2 := GT2InspectorButton new
 		margin: (BlInsets right: 20);
-		text: 'Inspect in GT2Inspector' asRopedText;
+		text: 'Generate code' asRopedText;
 		addEventHandlerOn: BlClickEvent do: [ :anEvent |
-			GT2InspectorWindow openOnModel: (GT2Inspector on: self inspectionSession) ].
+			GTPlayground openContents: (GT2InspectionCodeGenerator onSession: self inspectionSession) generateCodeForSession. ].
 	buttonsPane addChild: button2.
 	
 	button3 := GT2InspectorButton new
