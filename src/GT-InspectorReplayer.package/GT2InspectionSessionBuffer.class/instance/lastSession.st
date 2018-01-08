@@ -1,3 +1,6 @@
 initialization
 lastSession
-	^ buffer at: currentIndex
+	^ self hasSession 
+		ifTrue: [ buffer at: currentIndex ]
+		ifFalse: [ nil ]
+	
