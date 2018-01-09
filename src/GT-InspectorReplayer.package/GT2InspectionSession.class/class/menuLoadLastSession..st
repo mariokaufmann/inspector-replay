@@ -4,5 +4,7 @@ menuLoadLastSession: aBuilder
 	
 	(aBuilder item: 'Last inspection session'; parent: #GT2Inspector) 
 		action: 
-			[ self sessionBuffer lastSession ifNotNil: 
-				[ :session | session uiActionRecorder replaySession: session  ] ]
+			[ self sessionBuffer hasSession
+				ifTrue: [ sessionBuffer lastSession uiActionRecorder 
+					replaySession: sessionBuffer lastSession  ]
+				ifFalse: [ self inform: 'No inspection session available for replay.']]
