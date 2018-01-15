@@ -1,5 +1,5 @@
 executing
 canTransform: anObject
-	(anObject respondsTo: #at:)
-		ifTrue: [ ^ anObject size >= index ]
-		ifFalse: [ ^ false ]
+	(anObject respondsTo: #isSequenceable) and: 
+		[ anObject isSequenceable and: [ ^ anObject size >= index ] ].
+	^ false
