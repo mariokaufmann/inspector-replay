@@ -1,3 +1,3 @@
 executing
 transform: anObject
-	^ anObject instVarNamed: self instVarName
+	^ anObject instVarNamed: instVarName
