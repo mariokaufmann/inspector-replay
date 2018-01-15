@@ -1,0 +1,3 @@
+executing
+canTransform: anObject
+	self subclassResponsibility

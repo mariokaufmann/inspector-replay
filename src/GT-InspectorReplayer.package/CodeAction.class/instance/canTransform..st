@@ -1,0 +1,3 @@
+accessing
+canTransform: anObject
+	^ true
