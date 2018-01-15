@@ -8,7 +8,11 @@ printAction: anAction onStream: aStream
 			aStream nextPutAll: ' := '.
 			aStream nextPutAll: each value formattedCode.
 			aStream nextPutAll: '.' ]
-		ifFalse: [ aStream nextPutAll: each formattedCode  ] ].
+		ifFalse: [ 
+			aStream nextPutAll: each formattedCode.
+			aStream nextPutAll: '.'.
+			aStream nextPut: Character linefeed.
+			  ] ].
 	aStream nextPut: Character linefeed.
 	
 	
