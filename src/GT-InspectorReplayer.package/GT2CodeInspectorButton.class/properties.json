@@ -1,18 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GT2TabElement",
+	"super" : "GT2InspectorButton",
 	"category" : "GT-InspectorReplayer-UI - Code",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"title",
-		"displayBlock",
-		"navigationBlock",
-		"uiActionRecorder",
-		"inspectionClass",
-		"textEditor"
+		"tabElement"
 	],
-	"name" : "GT2CodeTabElement",
+	"name" : "GT2CodeInspectorButton",
 	"type" : "normal"
 }

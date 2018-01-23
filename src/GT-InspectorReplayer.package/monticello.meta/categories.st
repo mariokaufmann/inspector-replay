@@ -1,6 +1,7 @@
 SystemOrganization addCategory: #'GT-InspectorReplayer'!
 SystemOrganization addCategory: 'GT-InspectorReplayer-Model'!
 SystemOrganization addCategory: 'GT-InspectorReplayer-UI - Buttons'!
+SystemOrganization addCategory: 'GT-InspectorReplayer-UI - Code'!
 SystemOrganization addCategory: 'GT-InspectorReplayer-UI - Inspector'!
 SystemOrganization addCategory: 'GT-InspectorReplayer-UI - Pager'!
 SystemOrganization addCategory: 'GT-InspectorReplayer-UI - TableElement'!
