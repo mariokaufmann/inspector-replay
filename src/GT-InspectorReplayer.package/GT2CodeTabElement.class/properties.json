@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "GT2TabElement",
+	"category" : "GT-InspectorReplayer-UI - Inspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"title",
+		"displayBlock",
+		"navigationBlock",
+		"uiActionRecorder"
+	],
+	"name" : "GT2CodeTabElement",
+	"type" : "normal"
+}

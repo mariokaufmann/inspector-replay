@@ -1,0 +1,3 @@
+initialization
+initializeContent
+	self setupUI.
