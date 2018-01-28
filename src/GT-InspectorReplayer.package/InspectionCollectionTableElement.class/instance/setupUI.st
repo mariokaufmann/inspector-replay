@@ -1,7 +1,7 @@
 initialization
 setupUI
 	
-	| buttonPane |
+	| buttonPane action |
 	self layout: BlLinearLayout vertical.
 	
 	rowsElement := InspectionRowsElement new.
@@ -24,8 +24,8 @@ setupUI
 				c linear horizontal alignRight
 				 ];
 			addEventHandlerOn: BlClickEvent do: [ :anEvent |
-				"navigationBlock value: self codeAction.
-				uiActionRecorder recordClickOnElement: anEvent currentTarget "
+				action := CompositeCollectionAction withTransformationActions: retrieveStepsBlock value.
+				self navigationBlock value: action.
 				 ];
 			yourself).
 	self addChild: buttonPane.

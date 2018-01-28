@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "InspectorTransformationAction",
+	"category" : "GT-InspectorReplayer-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"transformationActions"
+	],
+	"name" : "CompositeCollectionAction",
+	"type" : "normal"
+}
