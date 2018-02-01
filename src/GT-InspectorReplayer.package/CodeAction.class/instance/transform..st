@@ -1,5 +1,3 @@
 executing
 transform: anObject
-	| temp |
-	temp := anObject class compiler source: code; receiver: anObject.
-	^ temp evaluate
+	^ (anObject class compiler source: code; receiver: anObject) evaluate
