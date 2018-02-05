@@ -14,8 +14,10 @@ rowItem: aRowItem atPosition: aPosition in: aDataSource
 		aDataSource uiActionRecorder recordClickOnElement: anEvent currentTarget ].
 
 	aRowItem columnValues valuesDo: [ :value |
-		| element |
-		element := self elementForText: (value asString).
+		| element text |
+		text := (value asString).
+		value asString isEmpty ifTrue: [ text := ' ' ].
+		element := self elementForText: text.
 		element constraintsDo: [ :c |
 			c horizontal matchParent.
 			c vertical fitContent ].
