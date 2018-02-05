@@ -1,6 +1,6 @@
 executing
 transformAST
  | ast |
-	ast :=  self generateAST: (self class methodDict at: #transform:).
+	ast :=  self generateAST: self transformMethod.
 	(InspectorTransformationActionVisitor onAction: self) visitMethodNode: ast.
 	^ ast
