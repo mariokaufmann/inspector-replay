@@ -1,6 +1,6 @@
 *GT-InspectorReplayer
 gt2InspectorItemsIn: composite
-	<gt2InspectorPresentationOrder: 0> 
+	<gt2InspectorPresentationOrder: 20> 
 	^ composite buttonTable 
 		title: 'Items';
 		display: [self isDirectory 
