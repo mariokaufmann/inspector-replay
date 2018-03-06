@@ -1,4 +1,6 @@
 initialization
 ensurePaneVisibleForPosition: anInteger
 	self scrollToPosition: anInteger.
-	^ (self findElementHolderForPosition: anInteger checkNew: true) itemElement
+	self findElementHolder: anInteger.
+	^ (self findElementHolder: anInteger) itemElement
+	
