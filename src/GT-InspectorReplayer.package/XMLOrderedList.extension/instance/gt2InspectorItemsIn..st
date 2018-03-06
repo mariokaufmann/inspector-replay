@@ -5,4 +5,4 @@ gt2InspectorItemsIn: composite
 		title: 'Nodes';
 		display: [ self select: [ :value | value isElement ]];
 		column: 'Item' evaluated: [ :value :index | value asString ];
-		rowSelectAction: [ :value :index | (IndexSelectionAction withIndex: index) ].
+		rowSelectAction: [ :value :index | (XMLElementIndexSelectionAction withIndex: index) ].
