@@ -4,5 +4,5 @@ replayOn: anElement
 	"BlUniverse defer: [ "
 		uiActions do: [ :anAction |
 			anAction replayOn: anElement. 
-				300 milliSeconds asDelay wait.
+				500 milliSeconds asDelay wait.
 			] "]"
