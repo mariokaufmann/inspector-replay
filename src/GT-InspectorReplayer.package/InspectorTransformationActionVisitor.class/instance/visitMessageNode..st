@@ -2,7 +2,7 @@ accessing
 visitMessageNode: aMessageNode
 	(aMessageNode receiver respondsTo: #messages)
 		ifTrue: [ aMessageNode receiver messages do: [ :each | self visitMessageNode: each ]].
-	(aMessageNode receiver arguments isNotEmpty)
+	((aMessageNode receiver respondsTo: #arguments) and: [ aMessageNode receiver arguments isNotEmpty])
 		ifTrue: [ self visitMessageNode: aMessageNode receiver ].
 	aMessageNode arguments doWithIndex: [ :arg :index |
 		(arg respondsTo: #body) ifTrue: [ self visitSequenceNode: arg body.].

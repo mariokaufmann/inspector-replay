@@ -1,3 +1,3 @@
 executing
 canTransform: anObject
-	^ anObject respondsTo: #isSequenceable
+	^ (anObject respondsTo: #isSequenceable) or: [ anObject respondsTo: #collect: ]
